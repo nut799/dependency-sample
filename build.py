@@ -1,22 +1,22 @@
 import os
 import shutil
 
-dependency_name = 'helloworld'
+dependency_name = 'sample'
 
-rootDir = os.getenv(key='EZO_ROOT')
-currentDir = os.getcwd()
-vendorDir = os.path.join(rootDir, 'vendor')
-tempDir = os.path.join(rootDir, 'temp')
+root_dir = os.getenv(key='EZORED_PROJECT_ROOT')
+current_dir = os.getcwd()
+vendor_dir = os.path.join(root_dir, 'vendor')
+temp_dir = os.path.join(root_dir, 'temp')
 
-print "HelloWorld :: Build script"
-print "HelloWorld :: EZO_ROOT: %s" % (rootDir)
-print "HelloWorld :: WORKING_DIR: %s" % (currentDir)
-print "HelloWorld :: VENDOR_DIR: %s" % (vendorDir)
-print "HelloWorld :: TEMP_DIR: %s" % (tempDir)
+print "Sample :: Build script"
+print "Sample :: EZORED_PROJECT_ROOT: %s" % (root_dir)
+print "Sample :: WORKING_DIR: %s" % (current_dir)
+print "Sample :: VENDOR_DIR: %s" % (vendor_dir)
+print "Sample :: TEMP_DIR: %s" % (temp_dir)
 
 try:
-    shutil.rmtree(path=os.path.join(vendorDir, dependency_name))
+    shutil.rmtree(path=os.path.join(vendor_dir, dependency_name))
 except:
     pass
 
-shutil.copytree(os.path.join(currentDir, 'build'), os.path.join(vendorDir, dependency_name))
+shutil.copytree(os.path.join(current_dir, 'build'), os.path.join(vendor_dir, dependency_name))
