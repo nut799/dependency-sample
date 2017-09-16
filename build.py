@@ -1,7 +1,7 @@
 import os
 import shutil
 
-dependency_name = 'sample'
+dependency_name = 'ezored-sample'
 
 root_dir = os.getenv(key='EZORED_PROJECT_ROOT')
 current_dir = os.getcwd()
