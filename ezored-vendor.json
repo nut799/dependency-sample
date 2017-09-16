@@ -1,0 +1,53 @@
+{
+	"dependency": {
+		"build": [
+			"python",
+			"build.py"
+		]
+	},
+	"targets": {
+		"ios": {
+			"headerSearchPaths": [
+				"../../vendor/helloworld/bridge",
+				"../../vendor/helloworld/djinni/cpp-output",
+				"../../vendor/helloworld/djinni/objc-output",
+				"../../vendor/helloworld/source"
+			],
+			"headerFiles": [
+				"../../../vendor/helloworld/djinni/cpp-output/hello_world_bridge.hpp",
+				"../../../vendor/helloworld/djinni/objc-output/EzoHelloWorldBridge.h",
+				"../../../vendor/helloworld/djinni/objc-output/EzoHelloWorldBridge+Private.h",
+				"../../../vendor/helloworld/bridge/HelloWorldBridgeImpl.hpp"
+			],
+			"sourceFiles": [
+				"../../../vendor/helloworld/djinni/objc-output/EzoHelloWorldBridge+Private.mm",
+				"../../../vendor/helloworld/source/HelloWorld.cpp",
+				"../../../vendor/helloworld/bridge/HelloWorldBridgeImpl.cpp"
+			]
+		},
+		"android": {
+			"headerSearchPaths": [
+				"../../../vendor/helloworld/bridge",
+				"../../../vendor/helloworld/djinni/cpp-output",
+				"../../../vendor/helloworld/djinni/jni-output",
+				"../../../vendor/helloworld/source"
+			],
+			"headerFiles": [
+				"../../../vendor/helloworld/djinni/cpp-output/hello_world_bridge.hpp",
+				"../../../vendor/helloworld/djinni/jni-output/NativeHelloWorldBridge.hpp",
+				"../../../vendor/helloworld/bridge/HelloWorldBridgeImpl.hpp"
+			],
+			"sourceFiles": [
+				"../../../vendor/helloworld/djinni/jni-output/NativeHelloWorldBridge.cpp",
+				"../../../vendor/helloworld/source/HelloWorld.cpp",
+				"../../../vendor/helloworld/bridge/HelloWorldBridgeImpl.cpp"
+			],
+			"copyFiles": [
+				{
+					"from": "vendor/helloworld/djinni/java-output/HelloWorldBridge.java",
+					"to": "build/android/library/src/main/java/com/ezoframework/helloworld/HelloWorldBridge.java"
+				}
+			]
+		}
+	}
+}

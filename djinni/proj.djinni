@@ -1,0 +1,7 @@
+# EZO::HelloWorld
+hello_world_bridge = interface +c {
+	static create(): hello_world_bridge;
+	set_greeting_message(message: string);
+	get_greeting_message(): string;
+    show_greeting_message();
+}
