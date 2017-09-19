@@ -10,15 +10,15 @@ namespace Ezored {
     }
 
     void HelloWorldBridgeImpl::set_greeting_message(const std::string &message) {
-        (*this->helloWorld)->setGreetingMessage(message);
+        *helloWorld->setGreetingMessage(message);
     }
 
     std::string HelloWorldBridgeImpl::get_greeting_message() {
-		return (*this->helloWorld)->getGreetingMessage();
+		return *helloWorld->getGreetingMessage();
     }
 
     void HelloWorldBridgeImpl::show_greeting_message() {
-		(*this->helloWorld)->showGreetingMessage();		
+		*helloWorld->showGreetingMessage();		
     }
 
 }
