@@ -14,7 +14,7 @@ public:
     void set_greeting_message(const std::string & message);
     std::string get_greeting_message();
 	void show_greeting_message();
-	void setHelloWorld(std::shared_ptr<HelloWorld> helloWorld)
+	void setHelloWorld(std::shared_ptr<HelloWorld> helloWorld);
 private:
 	std::shared_ptr<HelloWorld> helloWorld;
 };
