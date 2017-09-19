@@ -6,16 +6,16 @@
 
 static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for this file");
 
-@class EzoHelloWorldBridge;
+@class EzoredHelloWorldBridge;
 
 namespace djinni_generated {
 
 class HelloWorldBridge
 {
 public:
-    using CppType = std::shared_ptr<::Ezo::HelloWorldBridge>;
-    using CppOptType = std::shared_ptr<::Ezo::HelloWorldBridge>;
-    using ObjcType = EzoHelloWorldBridge*;
+    using CppType = std::shared_ptr<::Ezored::HelloWorldBridge>;
+    using CppOptType = std::shared_ptr<::Ezored::HelloWorldBridge>;
+    using ObjcType = EzoredHelloWorldBridge*;
 
     using Boxed = HelloWorldBridge;
 

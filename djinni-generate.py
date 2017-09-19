@@ -12,18 +12,18 @@ except:
 subprocess.call([
     "/Users/paulo/Developer/workspaces/cpp/djinni/src/run",
     "--java-out", "build/djinni/java-output",
-	"--java-package", "com.ezoframework.helloworld",
+	"--java-package", "com.erozed.sample",
 	"--ident-java-field", "mFooBar",
 
 	"--cpp-out", "build/djinni/cpp-output",
-	"--cpp-namespace", "Ezo",
+	"--cpp-namespace", "Ezored",
 
 	"--ident-jni-class", "NativeFooBar",
 	"--ident-jni-file", "NativeFooBar",
 	"--jni-out", "build/djinni/jni-output",
 
 	"--objc-out", "build/djinni/objc-output",
-	"--objc-type-prefix", "Ezo",
+	"--objc-type-prefix", "Ezored",
 	"--objcpp-out", "build/djinni/objc-output",
 
 	"--idl", "djinni/proj.djinni"	

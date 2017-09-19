@@ -6,7 +6,7 @@
 #include <memory>
 #include <string>
 
-namespace Ezo {
+namespace Ezored {
 
 /** EZO::HelloWorld */
 class HelloWorldBridge {
@@ -22,4 +22,4 @@ public:
     virtual void show_greeting_message() = 0;
 };
 
-}  // namespace Ezo
+}  // namespace Ezored
