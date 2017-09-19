@@ -10,21 +10,21 @@
 			"name": "ios",
 			"data": {
 				"headerSearchPaths": [
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/bridge",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/cpp-output",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/objc-output",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/source"
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source"
 				],
 				"headerFiles": [
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/cpp-output/hello_world_bridge.hpp",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/objc-output/EzoHelloWorldBridge.h",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/objc-output/EzoHelloWorldBridge+Private.h",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/bridge/HelloWorldBridgeImpl.hpp"
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_bridge.hpp",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoHelloWorldBridge.h",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoHelloWorldBridge+Private.h",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge${EZORED_DS}HelloWorldBridgeImpl.hpp"
 				],
 				"sourceFiles": [
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/objc-output/EzoHelloWorldBridge+Private.mm",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/source/HelloWorld.cpp",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/bridge/HelloWorldBridgeImpl.cpp"
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoHelloWorldBridge+Private.mm",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}HelloWorld.cpp",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge${EZORED_DS}HelloWorldBridgeImpl.cpp"
 				]
 			}
 		},
@@ -32,25 +32,25 @@
 			"name": "android",
 			"data": {
 				"headerSearchPaths": [
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/bridge",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/cpp-output",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/jni-output",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/source"
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source"
 				],
 				"headerFiles": [
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/cpp-output/hello_world_bridge.hpp",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/jni-output/NativeHelloWorldBridge.hpp",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/bridge/HelloWorldBridgeImpl.hpp"
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_bridge.hpp",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output${EZORED_DS}NativeHelloWorldBridge.hpp",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge${EZORED_DS}HelloWorldBridgeImpl.hpp"
 				],
 				"sourceFiles": [
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/jni-output/NativeHelloWorldBridge.cpp",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/source/HelloWorld.cpp",
-					"${EZORED_PROJECT_DIR}/vendor/ezored-sample/bridge/HelloWorldBridgeImpl.cpp"
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output${EZORED_DS}NativeHelloWorldBridge.cpp",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}HelloWorld.cpp",
+					"${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge${EZORED_DS}HelloWorldBridgeImpl.cpp"
 				],
 				"copyFiles": [
 					{
-						"from": "${EZORED_PROJECT_DIR}/vendor/ezored-sample/djinni/java-output/HelloWorldBridge.java",
-						"to": "${EZORED_PROJECT_DIR}/build/android/library/src/main/java/com/ezoframework/ezored-sample/HelloWorldBridge.java"
+						"from": "${EZORED_PROJECT_DIR}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}java-output${EZORED_DS}HelloWorldBridge.java",
+						"to": "${EZORED_PROJECT_DIR}${EZORED_DS}build${EZORED_DS}android${EZORED_DS}library${EZORED_DS}src${EZORED_DS}main${EZORED_DS}java${EZORED_DS}com${EZORED_DS}ezoframework${EZORED_DS}ezored-sample${EZORED_DS}HelloWorldBridge.java"
 					}
 				]
 			}
