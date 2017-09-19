@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 
-namespace Ezo {
+namespace Ezored {
 
 	class HelloWorld
 	{

@@ -1,6 +1,6 @@
 #include "HelloWorld.hpp"
 
-namespace Ezo
+namespace Ezored
 {
 
 	HelloWorld::HelloWorld()
