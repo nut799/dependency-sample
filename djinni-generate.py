@@ -12,7 +12,7 @@ except:
 subprocess.call([
     "/Users/paulo/Developer/workspaces/cpp/djinni/src/run",
     "--java-out", "build/djinni/java-output",
-	"--java-package", "com.erozed.sample",
+	"--java-package", "com.ezored.sample",
 	"--ident-java-field", "mFooBar",
 
 	"--cpp-out", "build/djinni/cpp-output",
