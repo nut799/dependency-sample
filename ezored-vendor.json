@@ -50,7 +50,7 @@
 				"copyFiles": [
 					{
 						"from": "${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}java-output${EZORED_DS}HelloWorldBridge.java",
-						"to": "${EZORED_PROJECT_ROOT}${EZORED_DS}build${EZORED_DS}android${EZORED_DS}library${EZORED_DS}src${EZORED_DS}main${EZORED_DS}java${EZORED_DS}com${EZORED_DS}ezoframework${EZORED_DS}ezored-sample${EZORED_DS}HelloWorldBridge.java"
+						"to": "${EZORED_BUILD_DIR}${EZORED_DS}android${EZORED_DS}library${EZORED_DS}src${EZORED_DS}main${EZORED_DS}java${EZORED_DS}com${EZORED_DS}ezored${EZORED_DS}ezored-sample${EZORED_DS}HelloWorldBridge.java"
 					}
 				]
 			}
