@@ -1,5 +1,4 @@
-#ifndef HELLO_WORLD_H
-#define HELLO_WORLD_H
+#pragma once
 
 #include <string>
 #include <iostream>
@@ -21,5 +20,3 @@ namespace Ezored {
 	};
 
 }
-
-#endif // HELLO_WORLD_H

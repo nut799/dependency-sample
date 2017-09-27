@@ -2,6 +2,10 @@
 
 namespace Ezored {
 
+	HelloWorldImpl::HelloWorldImpl() {
+		proxy = nullptr;
+	}
+
     std::shared_ptr<HelloWorld> HelloWorld::create() {
 		std::shared_ptr<HelloWorld> impl = std::make_shared<HelloWorldImpl>();
 		return impl;
@@ -12,7 +16,7 @@ namespace Ezored {
 	}
 
 	std::shared_ptr<HelloWorldProxy> HelloWorldImpl::get_proxy() {
-		return this->proxy;
+		return proxy;
 	}
 
 	void HelloWorldImpl::set_greeting_message(const std::string & message) {
@@ -28,8 +32,8 @@ namespace Ezored {
 	}
 
 	void HelloWorldImpl::show_greeting_message_alert() {
-		if (this->proxy != nullptr) {
-			this->proxy->show_greeting_message_alert();
+		if (proxy != nullptr) {
+			proxy->show_greeting_message_alert();
 		}
 	}
 

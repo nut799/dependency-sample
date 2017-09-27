@@ -1,5 +1,4 @@
-#ifndef HELLO_WORLD_IMPL_H
-#define HELLO_WORLD_IMPL_H
+#pragma once
 
 #include <string>
 #include <iostream>
@@ -10,9 +9,12 @@ namespace Ezored
 class HelloWorldImpl : public HelloWorld
 {
 public:	
+	HelloWorldImpl();
+
 	static std::shared_ptr<HelloWorld> create();
 	void set_proxy(const std::shared_ptr<HelloWorldProxy> & proxy) override;
 	std::shared_ptr<HelloWorldProxy> get_proxy() override;
+
 	void set_greeting_message(const std::string & message) override;
 	std::string get_greeting_message() override;
 	void show_greeting_message() override;
@@ -22,5 +24,3 @@ private:
 	std::shared_ptr<HelloWorldProxy> proxy;
 };
 }
-
-#endif // HELLO_WORLD_BRIDGE_IMPL_H

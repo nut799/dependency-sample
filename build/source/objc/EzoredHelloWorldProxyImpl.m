@@ -36,13 +36,14 @@
 - (void)showGreetingMessageAlert {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Title" message:@"Message from native Obj-C" preferredStyle:UIAlertControllerStyleAlert];
 
-	UIAlertAction *button = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-		// handle action
+	UIAlertAction *button = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+		// handle action if need
 	}];
 
 	[alert addAction:button];
 	
-	[self presentViewController:alert animated:YES completion:nil];
+	UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [controller presentViewController:alert animated:YES completion:nil];
 }
 
 @end
