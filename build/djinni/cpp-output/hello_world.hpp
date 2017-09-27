@@ -8,18 +8,26 @@
 
 namespace Ezored {
 
-/** EZO::HelloWorld */
-class HelloWorldBridge {
-public:
-    virtual ~HelloWorldBridge() {}
+class HelloWorldProxy;
 
-    static std::shared_ptr<HelloWorldBridge> create();
+/** Native HelloWorld Class */
+class HelloWorld {
+public:
+    virtual ~HelloWorld() {}
+
+    static std::shared_ptr<HelloWorld> create();
+
+    virtual void set_proxy(const std::shared_ptr<HelloWorldProxy> & proxy) = 0;
+
+    virtual std::shared_ptr<HelloWorldProxy> get_proxy() = 0;
 
     virtual void set_greeting_message(const std::string & message) = 0;
 
     virtual std::string get_greeting_message() = 0;
 
     virtual void show_greeting_message() = 0;
+
+    virtual void show_greeting_message_alert() = 0;
 };
 
 }  // namespace Ezored

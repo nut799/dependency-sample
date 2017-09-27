@@ -5,17 +5,23 @@ package com.ezored.sample;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/** EZO::HelloWorld */
-public abstract class HelloWorldBridge {
+/** Native HelloWorld Class */
+public abstract class HelloWorld {
+    public abstract void setProxy(HelloWorldProxy proxy);
+
+    public abstract HelloWorldProxy getProxy();
+
     public abstract void setGreetingMessage(String message);
 
     public abstract String getGreetingMessage();
 
     public abstract void showGreetingMessage();
 
-    public static native HelloWorldBridge create();
+    public abstract void showGreetingMessageAlert();
 
-    private static final class CppProxy extends HelloWorldBridge
+    public static native HelloWorld create();
+
+    private static final class CppProxy extends HelloWorld
     {
         private final long nativeRef;
         private final AtomicBoolean destroyed = new AtomicBoolean(false);
@@ -37,6 +43,22 @@ public abstract class HelloWorldBridge {
             destroy();
             super.finalize();
         }
+
+        @Override
+        public void setProxy(HelloWorldProxy proxy)
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_setProxy(this.nativeRef, proxy);
+        }
+        private native void native_setProxy(long _nativeRef, HelloWorldProxy proxy);
+
+        @Override
+        public HelloWorldProxy getProxy()
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            return native_getProxy(this.nativeRef);
+        }
+        private native HelloWorldProxy native_getProxy(long _nativeRef);
 
         @Override
         public void setGreetingMessage(String message)
@@ -61,5 +83,13 @@ public abstract class HelloWorldBridge {
             native_showGreetingMessage(this.nativeRef);
         }
         private native void native_showGreetingMessage(long _nativeRef);
+
+        @Override
+        public void showGreetingMessageAlert()
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_showGreetingMessageAlert(this.nativeRef);
+        }
+        private native void native_showGreetingMessageAlert(long _nativeRef);
     }
 }

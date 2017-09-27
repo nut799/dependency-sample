@@ -1,7 +1,15 @@
-# EZO::HelloWorld
-hello_world_bridge = interface +c {
-	static create(): hello_world_bridge;
+# Platform-Specific implementation of HelloWorld Proxy Class
+hello_world_proxy = interface +j +o {
+	show_greeting_message_alert();
+}
+
+# Native HelloWorld Class
+hello_world = interface +c {
+	static create(): hello_world;
+	set_proxy(proxy: hello_world_proxy);
+	get_proxy(): hello_world_proxy;
 	set_greeting_message(message: string);
 	get_greeting_message(): string;
     show_greeting_message();
+	show_greeting_message_alert();
 }
