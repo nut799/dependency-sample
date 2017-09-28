@@ -34,7 +34,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorld_00024CppProxy_native_1
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::HelloWorld>(nativeRef);
-        ref->set_proxy(::djinni_generated::NativeHelloWorldProxy::toCpp(jniEnv, j_proxy));
+        ref->setProxy(::djinni_generated::NativeHelloWorldProxy::toCpp(jniEnv, j_proxy));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
@@ -43,7 +43,7 @@ CJNIEXPORT jobject JNICALL Java_com_ezored_sample_HelloWorld_00024CppProxy_nativ
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::HelloWorld>(nativeRef);
-        auto r = ref->get_proxy();
+        auto r = ref->getProxy();
         return ::djinni::release(::djinni_generated::NativeHelloWorldProxy::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
@@ -53,7 +53,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorld_00024CppProxy_native_1
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::HelloWorld>(nativeRef);
-        ref->set_greeting_message(::djinni::String::toCpp(jniEnv, j_message));
+        ref->setGreetingMessage(::djinni::String::toCpp(jniEnv, j_message));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
@@ -62,7 +62,7 @@ CJNIEXPORT jstring JNICALL Java_com_ezored_sample_HelloWorld_00024CppProxy_nativ
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::HelloWorld>(nativeRef);
-        auto r = ref->get_greeting_message();
+        auto r = ref->getGreetingMessage();
         return ::djinni::release(::djinni::String::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
@@ -72,7 +72,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorld_00024CppProxy_native_1
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::HelloWorld>(nativeRef);
-        ref->show_greeting_message();
+        ref->showGreetingMessage();
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
@@ -81,7 +81,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorld_00024CppProxy_native_1
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::HelloWorld>(nativeRef);
-        ref->show_greeting_message_alert();
+        ref->showGreetingMessageAlert();
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 

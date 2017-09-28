@@ -17,7 +17,7 @@ class HelloWorldProxy::ObjcProxy final
     friend class ::djinni_generated::HelloWorldProxy;
 public:
     using ObjcProxyBase::ObjcProxyBase;
-    void show_greeting_message_alert() override
+    void showGreetingMessageAlert() override
     {
         @autoreleasepool {
             [djinni_private_get_proxied_objc_object() showGreetingMessageAlert];

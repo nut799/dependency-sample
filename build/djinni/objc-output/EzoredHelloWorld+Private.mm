@@ -40,39 +40,39 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
 
 - (void)setProxy:(nullable id<EzoredHelloWorldProxy>)proxy {
     try {
-        _cppRefHandle.get()->set_proxy(::djinni_generated::HelloWorldProxy::toCpp(proxy));
+        _cppRefHandle.get()->setProxy(::djinni_generated::HelloWorldProxy::toCpp(proxy));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 - (nullable id<EzoredHelloWorldProxy>)getProxy {
     try {
-        auto objcpp_result_ = _cppRefHandle.get()->get_proxy();
+        auto objcpp_result_ = _cppRefHandle.get()->getProxy();
         return ::djinni_generated::HelloWorldProxy::fromCpp(objcpp_result_);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 - (void)setGreetingMessage:(nonnull NSString *)message {
     try {
-        _cppRefHandle.get()->set_greeting_message(::djinni::String::toCpp(message));
+        _cppRefHandle.get()->setGreetingMessage(::djinni::String::toCpp(message));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 - (nonnull NSString *)getGreetingMessage {
     try {
-        auto objcpp_result_ = _cppRefHandle.get()->get_greeting_message();
+        auto objcpp_result_ = _cppRefHandle.get()->getGreetingMessage();
         return ::djinni::String::fromCpp(objcpp_result_);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 - (void)showGreetingMessage {
     try {
-        _cppRefHandle.get()->show_greeting_message();
+        _cppRefHandle.get()->showGreetingMessage();
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 - (void)showGreetingMessageAlert {
     try {
-        _cppRefHandle.get()->show_greeting_message_alert();
+        _cppRefHandle.get()->showGreetingMessageAlert();
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

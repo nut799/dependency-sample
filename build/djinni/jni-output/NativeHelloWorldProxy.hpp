@@ -33,7 +33,7 @@ private:
         JavaProxy(JniType j);
         ~JavaProxy();
 
-        void show_greeting_message_alert() override;
+        void showGreetingMessageAlert() override;
 
     private:
         friend ::djinni::JniInterface<::Ezored::HelloWorldProxy, ::djinni_generated::NativeHelloWorldProxy>;

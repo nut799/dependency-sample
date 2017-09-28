@@ -13,7 +13,7 @@ NativeHelloWorldProxy::JavaProxy::JavaProxy(JniType j) : Handle(::djinni::jniGet
 
 NativeHelloWorldProxy::JavaProxy::~JavaProxy() = default;
 
-void NativeHelloWorldProxy::JavaProxy::show_greeting_message_alert() {
+void NativeHelloWorldProxy::JavaProxy::showGreetingMessageAlert() {
     auto jniEnv = ::djinni::jniGetThreadEnv();
     ::djinni::JniLocalScope jscope(jniEnv, 10);
     const auto& data = ::djinni::JniClass<::djinni_generated::NativeHelloWorldProxy>::get();

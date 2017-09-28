@@ -17,17 +17,17 @@ public:
 
     static std::shared_ptr<HelloWorld> create();
 
-    virtual void set_proxy(const std::shared_ptr<HelloWorldProxy> & proxy) = 0;
+    virtual void setProxy(const std::shared_ptr<HelloWorldProxy> & proxy) = 0;
 
-    virtual std::shared_ptr<HelloWorldProxy> get_proxy() = 0;
+    virtual std::shared_ptr<HelloWorldProxy> getProxy() = 0;
 
-    virtual void set_greeting_message(const std::string & message) = 0;
+    virtual void setGreetingMessage(const std::string & message) = 0;
 
-    virtual std::string get_greeting_message() = 0;
+    virtual std::string getGreetingMessage() = 0;
 
-    virtual void show_greeting_message() = 0;
+    virtual void showGreetingMessage() = 0;
 
-    virtual void show_greeting_message_alert() = 0;
+    virtual void showGreetingMessageAlert() = 0;
 };
 
 }  // namespace Ezored

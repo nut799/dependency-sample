@@ -10,7 +10,7 @@ class HelloWorldProxy {
 public:
     virtual ~HelloWorldProxy() {}
 
-    virtual void show_greeting_message_alert() = 0;
+    virtual void showGreetingMessageAlert() = 0;
 };
 
 }  // namespace Ezored

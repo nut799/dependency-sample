@@ -17,7 +17,9 @@ subprocess.call([
 
 	"--cpp-out", "build/djinni/cpp-output",
 	"--cpp-namespace", "Ezored",
-
+	"--ident-cpp-field", "fooBar",
+	"--ident-cpp-method", "fooBar",
+	
 	"--ident-jni-class", "NativeFooBar",
 	"--ident-jni-file", "NativeFooBar",
 	"--jni-out", "build/djinni/jni-output",
