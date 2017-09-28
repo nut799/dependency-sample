@@ -29,6 +29,9 @@
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoredHelloWorldProxy+Private.mm",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc${EZORED_DS}EzoredHelloWorldProxyImpl.m",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldImpl.cpp"
+				],
+				"frameworkLinks": [
+					"UIKit"
 				]
 			}
 		},

@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include <hello_world.hpp>
+#include <hello_world_proxy.hpp>
 
 namespace Ezored
 {
