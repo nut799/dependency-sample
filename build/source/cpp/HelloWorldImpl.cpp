@@ -11,29 +11,29 @@ namespace Ezored {
 		return impl;
 	}
 	
-	void HelloWorldImpl::set_proxy(const std::shared_ptr<HelloWorldProxy> & proxy) {
+	void HelloWorldImpl::setProxy(const std::shared_ptr<HelloWorldProxy> & proxy) {
 		this->proxy = proxy;
 	}
 
-	std::shared_ptr<HelloWorldProxy> HelloWorldImpl::get_proxy() {
+	std::shared_ptr<HelloWorldProxy> HelloWorldImpl::getProxy() {
 		return proxy;
 	}
 
-	void HelloWorldImpl::set_greeting_message(const std::string & message) {
+	void HelloWorldImpl::setGreetingMessage(const std::string & message) {
 		// need implement (real_hello_world->set_greeting_message)
 	}
 
-	std::string HelloWorldImpl::get_greeting_message() {
+	std::string HelloWorldImpl::getGreetingMessage() {
 		return "Need implement";
 	}
 
-	void HelloWorldImpl::show_greeting_message() {
+	void HelloWorldImpl::showGreetingMessage() {
 		std::cout << "Need implement" << std::endl;
 	}
 
-	void HelloWorldImpl::show_greeting_message_alert() {
+	void HelloWorldImpl::showGreetingMessageAlert() {
 		if (proxy != nullptr) {
-			proxy->show_greeting_message_alert();
+			proxy->showGreetingMessageAlert();
 		}
 	}
 

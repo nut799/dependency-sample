@@ -12,13 +12,13 @@ public:
 	HelloWorldImpl();
 
 	static std::shared_ptr<HelloWorld> create();
-	void set_proxy(const std::shared_ptr<HelloWorldProxy> & proxy) override;
-	std::shared_ptr<HelloWorldProxy> get_proxy() override;
+	void setProxy(const std::shared_ptr<HelloWorldProxy> & proxy) override;
+	std::shared_ptr<HelloWorldProxy> getProxy() override;
 
-	void set_greeting_message(const std::string & message) override;
-	std::string get_greeting_message() override;
-	void show_greeting_message() override;
-	void show_greeting_message_alert() override;
+	void setGreetingMessage(const std::string & message) override;
+	std::string getGreetingMessage() override;
+	void showGreetingMessage() override;
+	void showGreetingMessageAlert() override;
 
 private:
 	std::shared_ptr<HelloWorldProxy> proxy;
