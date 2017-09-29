@@ -7,7 +7,7 @@ namespace Ezored {
 	}
 
     std::shared_ptr<HelloWorldBridge> HelloWorldBridgeImpl::create() {
-		std::shared_ptr<HelloWorldBridge> impl = std::make_shared<HelloWorldBridgeImpl>();
+		std::shared_ptr<HelloWorldBridgeImpl> impl = std::make_shared<HelloWorldBridgeImpl>();
 
 		std::shared_ptr<HelloWorld> shared = std::make_shared<HelloWorld>();
 		impl->setShared(shared);
@@ -41,7 +41,7 @@ namespace Ezored {
 		}
 	}
 
-	void setShared(const std::shared_ptr<HelloWorld> & shared) {
+	void HelloWorldBridgeImpl::setShared(const std::shared_ptr<HelloWorld> & shared) {
 		this->shared = shared;
 	}
 
