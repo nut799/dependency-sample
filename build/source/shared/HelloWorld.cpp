@@ -25,7 +25,7 @@ namespace Ezored
 
 	void HelloWorld::showGreetingMessage()
 	{
-		std::cout << "Message: " << message << std::endl;
+        std::cout << "Message: " << message << std::endl;
 	}
 
 }

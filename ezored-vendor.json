@@ -31,7 +31,7 @@
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldProxy+Private.mm",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc${EZORED_DS}NativeHelloWorldProxyImpl.m",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldBridgeImpl.cpp",
-					"${EZORED_FULL_REPOSITORY_DIR}${EZORED_DS}build${EZORED_DS}source${EZORED_DS}shared${EZORED_DS}HelloWorld.cpp"
+					"${EZORED_REPOSITORY_DIR}${EZORED_DS}build${EZORED_DS}source${EZORED_DS}shared${EZORED_DS}HelloWorld.cpp"
 				],
 				"frameworkLinks": [
 					"UIKit"
