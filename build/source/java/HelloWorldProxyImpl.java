@@ -10,22 +10,24 @@ import android.support.v7.app.AlertDialog;
  */
 public class HelloWorldProxyImpl extends HelloWorldProxy {
 
-    private Context context;
+	private Context context;
 
-    public void showGreetingMessageAlert() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setMessage("Message")
-                .setNegativeButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.dismiss();
-                    }
-                });
+	public HelloWorldProxyImpl(Context context) {
+		this.context = context;
+	}
 
-        builder.create().show();
-    }
+	public void showGreetingMessageAlert() {
+		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
-    public void setContext(Context context) {
-        this.context = context;
-    }
+		builder.setTitle("Title");
+		builder.setMessage("Message from proxy Java code");
+		builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int id) {
+				dialog.dismiss();
+			}
+		});
+
+		builder.create().show();
+	}
 
 }

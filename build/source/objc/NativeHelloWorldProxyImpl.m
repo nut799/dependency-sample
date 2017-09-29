@@ -34,7 +34,7 @@
 //------------------------------------------------------------------------------
 
 - (void)showGreetingMessageAlert {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Title" message:@"Message from native Obj-C" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Title" message:@"Message from proxy Obj-C code" preferredStyle:UIAlertControllerStyleAlert];
 
 	UIAlertAction *button = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
 		// handle action if need
