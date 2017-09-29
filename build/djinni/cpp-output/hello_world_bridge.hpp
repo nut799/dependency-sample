@@ -10,12 +10,12 @@ namespace Ezored {
 
 class HelloWorldProxy;
 
-/** Native HelloWorld Class */
-class HelloWorld {
+/** Native HelloWorldBridge Class */
+class HelloWorldBridge {
 public:
-    virtual ~HelloWorld() {}
+    virtual ~HelloWorldBridge() {}
 
-    static std::shared_ptr<HelloWorld> create();
+    static std::shared_ptr<HelloWorldBridge> create();
 
     virtual void setProxy(const std::shared_ptr<HelloWorldProxy> & proxy) = 0;
 

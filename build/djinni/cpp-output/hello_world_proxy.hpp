@@ -5,7 +5,7 @@
 
 namespace Ezored {
 
-/** Platform-Specific implementation of HelloWorld Proxy Class */
+/** Platform-Specific implementation of HelloWorldProxy Class */
 class HelloWorldProxy {
 public:
     virtual ~HelloWorldProxy() {}

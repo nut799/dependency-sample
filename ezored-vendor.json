@@ -15,20 +15,22 @@
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source/objc"
 				],
 				"headerFiles": [
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world.hpp",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_bridge.hpp",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_proxy.hpp",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoredHelloWorld.h",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoredHelloWorld+Private.h",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoredHelloWorldProxy.h",					
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoredHelloWorldProxy+Private.h",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc${EZORED_DS}EzoredHelloWorldProxyImpl.h",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldImpl.hpp"
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorld.h",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorld+Private.h",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldProxy.h",					
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldProxy+Private.h",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc${EZORED_DS}NativeHelloWorldProxyImpl.h",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldBridgeImpl.hpp",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}shared${EZORED_DS}HelloWorld.hpp"
 				],
 				"sourceFiles": [
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoredHelloWorld+Private.mm",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}EzoredHelloWorldProxy+Private.mm",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc${EZORED_DS}EzoredHelloWorldProxyImpl.m",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldImpl.cpp"
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldBridge+Private.mm",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldProxy+Private.mm",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc${EZORED_DS}NativeHelloWorldProxyImpl.m",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldBridgeImpl.cpp",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}shared${EZORED_DS}HelloWorld.cpp"
 				],
 				"frameworkLinks": [
 					"UIKit"

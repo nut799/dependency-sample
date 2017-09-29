@@ -1,11 +1,11 @@
-#import "EzoredHelloWorldProxyImpl.h"
+#import "NativeHelloWorldProxyImpl.h"
 #import <UIKit/UIKit.h>
 
-@interface EzoredHelloWorldProxyImpl ()
+@interface NativeHelloWorldProxyImpl ()
 
 @end
 
-@implementation EzoredHelloWorldProxyImpl
+@implementation NativeHelloWorldProxyImpl
 
 //------------------------------------------------------------------------------
 #pragma mark - Class Initializer
@@ -30,7 +30,7 @@
 }
 
 //------------------------------------------------------------------------------
-#pragma mark - EzoredHelloWorldProxyImpl
+#pragma mark - NativeHelloWorldProxyImpl
 //------------------------------------------------------------------------------
 
 - (void)showGreetingMessageAlert {

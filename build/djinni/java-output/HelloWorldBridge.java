@@ -5,8 +5,8 @@ package com.ezored.sample;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/** Native HelloWorld Class */
-public abstract class HelloWorld {
+/** Native HelloWorldBridge Class */
+public abstract class HelloWorldBridge {
     public abstract void setProxy(HelloWorldProxy proxy);
 
     public abstract HelloWorldProxy getProxy();
@@ -19,9 +19,9 @@ public abstract class HelloWorld {
 
     public abstract void showGreetingMessageAlert();
 
-    public static native HelloWorld create();
+    public static native HelloWorldBridge create();
 
-    private static final class CppProxy extends HelloWorld
+    private static final class CppProxy extends HelloWorldBridge
     {
         private final long nativeRef;
         private final AtomicBoolean destroyed = new AtomicBoolean(false);

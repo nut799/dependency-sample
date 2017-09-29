@@ -3,7 +3,7 @@
 
 package com.ezored.sample;
 
-/** Platform-Specific implementation of HelloWorld Proxy Class */
+/** Platform-Specific implementation of HelloWorldProxy Class */
 public abstract class HelloWorldProxy {
     public abstract void showGreetingMessageAlert();
 }

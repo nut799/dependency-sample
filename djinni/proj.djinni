@@ -1,11 +1,11 @@
-# Platform-Specific implementation of HelloWorld Proxy Class
+# Platform-Specific implementation of HelloWorldProxy Class
 hello_world_proxy = interface +j +o {
 	show_greeting_message_alert();
 }
 
-# Native HelloWorld Class
-hello_world = interface +c {
-	static create(): hello_world;
+# Native HelloWorldBridge Class
+hello_world_bridge = interface +c {
+	static create(): hello_world_bridge;
 	set_proxy(proxy: hello_world_proxy);
 	get_proxy(): hello_world_proxy;
 	set_greeting_message(message: string);

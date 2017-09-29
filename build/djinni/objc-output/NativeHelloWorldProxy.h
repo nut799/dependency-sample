@@ -4,8 +4,8 @@
 #import <Foundation/Foundation.h>
 
 
-/** Platform-Specific implementation of HelloWorld Proxy Class */
-@protocol EzoredHelloWorldProxy
+/** Platform-Specific implementation of HelloWorldProxy Class */
+@protocol NativeHelloWorldProxy
 
 - (void)showGreetingMessageAlert;
 

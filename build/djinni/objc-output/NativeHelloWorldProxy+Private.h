@@ -6,7 +6,7 @@
 
 static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for this file");
 
-@protocol EzoredHelloWorldProxy;
+@protocol NativeHelloWorldProxy;
 
 namespace djinni_generated {
 
@@ -15,7 +15,7 @@ class HelloWorldProxy
 public:
     using CppType = std::shared_ptr<::Ezored::HelloWorldProxy>;
     using CppOptType = std::shared_ptr<::Ezored::HelloWorldProxy>;
-    using ObjcType = id<EzoredHelloWorldProxy>;
+    using ObjcType = id<NativeHelloWorldProxy>;
 
     using Boxed = HelloWorldProxy;
 
