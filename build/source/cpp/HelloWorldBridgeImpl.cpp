@@ -6,7 +6,7 @@ namespace Ezored {
 		proxy = nullptr;
 	}
 
-    std::shared_ptr<HelloWorldBridge> HelloWorldBridgeImpl::create() {
+    std::shared_ptr<HelloWorldBridge> HelloWorldBridge::create() {
 		std::shared_ptr<HelloWorldBridgeImpl> impl = std::make_shared<HelloWorldBridgeImpl>();
 
 		std::shared_ptr<HelloWorld> shared = std::make_shared<HelloWorld>();
