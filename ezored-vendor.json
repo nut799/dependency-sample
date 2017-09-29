@@ -12,8 +12,8 @@
 				"headerSearchPaths": [
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}shared"
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}shared",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}objc"
 				],
 				"headerFiles": [
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_bridge.hpp",
@@ -41,26 +41,34 @@
 		{
 			"name": "android",
 			"data": {
-				"headerSearchPaths": [
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge",
+				"headerSearchPaths": [					
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source"
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}shared",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}java"
 				],
 				"headerFiles": [
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_bridge.hpp",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_proxy.hpp",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output${EZORED_DS}NativeHelloWorldBridge.hpp",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge${EZORED_DS}HelloWorldBridgeImpl.hpp"
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output${EZORED_DS}NativeHelloWorldProxy.hpp",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldBridgeImpl.hpp",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}shared${EZORED_DS}HelloWorld.hpp"
 				],
 				"sourceFiles": [
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output${EZORED_DS}NativeHelloWorldBridge.cpp",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}HelloWorld.cpp",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}bridge${EZORED_DS}HelloWorldBridgeImpl.cpp"
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}jni-output${EZORED_DS}NativeHelloWorldProxy.cpp",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}source${EZORED_DS}cpp${EZORED_DS}HelloWorldBridgeImpl.cpp",
+					"${EZORED_REPOSITORY_DIR}${EZORED_DS}build${EZORED_DS}source${EZORED_DS}shared${EZORED_DS}HelloWorld.cpp"
 				],
 				"copyFiles": [
 					{
 						"from": "${EZORED_VENDOR_DIR}${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}java-output${EZORED_DS}HelloWorldBridge.java",
 						"to": "${EZORED_FULL_TARGET_DIR}${EZORED_DS}library${EZORED_DS}src${EZORED_DS}main${EZORED_DS}java${EZORED_DS}com${EZORED_DS}ezored${EZORED_DS}sample${EZORED_DS}HelloWorldBridge.java"
+					},
+					{
+						"from": "${EZORED_VENDOR_DIR}${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}java-output${EZORED_DS}HelloWorldProxy.java",
+						"to": "${EZORED_FULL_TARGET_DIR}${EZORED_DS}library${EZORED_DS}src${EZORED_DS}main${EZORED_DS}java${EZORED_DS}com${EZORED_DS}ezored${EZORED_DS}sample${EZORED_DS}HelloWorldProxy.java"
 					}
 				]
 			}
