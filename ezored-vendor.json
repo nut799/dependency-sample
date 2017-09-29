@@ -17,7 +17,7 @@
 				"headerFiles": [
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_bridge.hpp",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}cpp-output${EZORED_DS}hello_world_proxy.hpp",
-					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorld.h",
+					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldBridge.h",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorld+Private.h",
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldProxy.h",					
 					"${EZORED_PROJECT_ROOT}${EZORED_DS}vendor${EZORED_DS}ezored-sample${EZORED_DS}djinni${EZORED_DS}objc-output${EZORED_DS}NativeHelloWorldProxy+Private.h",
