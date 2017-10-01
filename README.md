@@ -34,10 +34,39 @@ bridge?.setGreetingMessage("Teste")
 bridge?.showGreetingMessage()
 
 // if you want show a native alert test from proxy
-DispatchQueue.main.async {
-	bridge?.showGreetingMessageAlert()
-}
+bridge?.showGreetingMessageAlert()
 ```
 
 ### How to use it with Android?
 
+```java
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.ezored.sample.HelloWorldBridge;
+import com.ezored.sample.HelloWorldProxyImpl;
+
+public class MainActivity extends AppCompatActivity {
+
+    static {
+        System.loadLibrary("Ezored");
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        HelloWorldProxyImpl proxy = new HelloWorldProxyImpl(this);
+
+        HelloWorldBridge bridge = HelloWorldBridge.create();
+        bridge.setGreetingMessage("Hello World");
+        bridge.showGreetingMessage();
+        bridge.setProxy(proxy);
+
+		// if you want show a native alert test from proxy
+        bridge.showGreetingMessageAlert();
+    }
+
+}
+```
