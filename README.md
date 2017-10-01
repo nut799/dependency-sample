@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         bridge.showGreetingMessage();
         bridge.setProxy(proxy);
 
-		// if you want show a native alert test from proxy
+        // if you want show a native alert test from proxy
         bridge.showGreetingMessageAlert();
     }
 
