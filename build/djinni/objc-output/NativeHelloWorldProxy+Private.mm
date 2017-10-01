@@ -11,7 +11,7 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
 namespace djinni_generated {
 
 class HelloWorldProxy::ObjcProxy final
-: public ::Ezored::HelloWorldProxy
+: public ::Ezored::Sample::HelloWorldProxy
 , private ::djinni::ObjcProxyBase<ObjcType>
 {
     friend class ::djinni_generated::HelloWorldProxy;

@@ -13,8 +13,8 @@ namespace djinni_generated {
 class HelloWorldBridge
 {
 public:
-    using CppType = std::shared_ptr<::Ezored::HelloWorldBridge>;
-    using CppOptType = std::shared_ptr<::Ezored::HelloWorldBridge>;
+    using CppType = std::shared_ptr<::Ezored::Sample::HelloWorldBridge>;
+    using CppOptType = std::shared_ptr<::Ezored::Sample::HelloWorldBridge>;
     using ObjcType = NativeHelloWorldBridge*;
 
     using Boxed = HelloWorldBridge;

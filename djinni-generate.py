@@ -16,7 +16,7 @@ subprocess.call([
 	"--ident-java-field", "mFooBar",
 
 	"--cpp-out", "build/djinni/cpp-output",
-	"--cpp-namespace", "Ezored",
+	"--cpp-namespace", "Ezored::Sample",
 	"--ident-cpp-field", "fooBar",
 	"--ident-cpp-method", "fooBar",
 	

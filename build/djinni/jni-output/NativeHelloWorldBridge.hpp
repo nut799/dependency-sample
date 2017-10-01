@@ -8,10 +8,10 @@
 
 namespace djinni_generated {
 
-class NativeHelloWorldBridge final : ::djinni::JniInterface<::Ezored::HelloWorldBridge, NativeHelloWorldBridge> {
+class NativeHelloWorldBridge final : ::djinni::JniInterface<::Ezored::Sample::HelloWorldBridge, NativeHelloWorldBridge> {
 public:
-    using CppType = std::shared_ptr<::Ezored::HelloWorldBridge>;
-    using CppOptType = std::shared_ptr<::Ezored::HelloWorldBridge>;
+    using CppType = std::shared_ptr<::Ezored::Sample::HelloWorldBridge>;
+    using CppOptType = std::shared_ptr<::Ezored::Sample::HelloWorldBridge>;
     using JniType = jobject;
 
     using Boxed = NativeHelloWorldBridge;
@@ -25,7 +25,7 @@ public:
 private:
     NativeHelloWorldBridge();
     friend ::djinni::JniClass<NativeHelloWorldBridge>;
-    friend ::djinni::JniInterface<::Ezored::HelloWorldBridge, NativeHelloWorldBridge>;
+    friend ::djinni::JniInterface<::Ezored::Sample::HelloWorldBridge, NativeHelloWorldBridge>;
 
 };
 

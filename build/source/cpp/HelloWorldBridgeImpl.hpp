@@ -4,10 +4,10 @@
 #include <iostream>
 #include <hello_world_bridge.hpp>
 #include <hello_world_proxy.hpp>
-#include <HelloWorld.hpp>
+#include <ezored/sample/HelloWorld.hpp>
 
-namespace Ezored
-{
+namespace Ezored { namespace Sample {
+	
 class HelloWorldBridgeImpl : public HelloWorldBridge
 {
 public:	
@@ -27,4 +27,5 @@ private:
 	std::shared_ptr<HelloWorldProxy> proxy;
 	std::shared_ptr<HelloWorld> shared;
 };
-}
+
+}}
