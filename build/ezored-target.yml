@@ -1,0 +1,52 @@
+targets:
+- name: ios
+  data:
+    headerSearchPaths:
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/cpp-output"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/objc-output"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/shared"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/objc"
+    headerFiles:
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/cpp-output/hello_world_bridge.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/cpp-output/hello_world_proxy.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/objc-output/NativeHelloWorldBridge.h"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/objc-output/NativeHelloWorldBridge+Private.h"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/objc-output/NativeHelloWorldProxy.h"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/objc-output/NativeHelloWorldProxy+Private.h"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/objc/NativeHelloWorldProxyImpl.h"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/cpp/HelloWorldBridgeImpl.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/shared/ezored/sample/HelloWorld.hpp"
+    sourceFiles:
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/objc-output/NativeHelloWorldBridge+Private.mm"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/objc-output/NativeHelloWorldProxy+Private.mm"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/objc/NativeHelloWorldProxyImpl.m"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/cpp/HelloWorldBridgeImpl.cpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/shared/ezored/sample/HelloWorld.cpp"
+    frameworkLinks:
+    - UIKit
+- name: android
+  data:
+    headerSearchPaths:
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/cpp-output"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/jni-output"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/shared"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/java"
+    headerFiles:
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/cpp-output/hello_world_bridge.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/cpp-output/hello_world_proxy.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/jni-output/NativeHelloWorldBridge.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/jni-output/NativeHelloWorldProxy.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/cpp/HelloWorldBridgeImpl.hpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/shared/ezored/sample/HelloWorld.hpp"
+    sourceFiles:
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/jni-output/NativeHelloWorldBridge.cpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/djinni/jni-output/NativeHelloWorldProxy.cpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/cpp/HelloWorldBridgeImpl.cpp"
+    - "${EZORED_PROJECT_ROOT}/vendor/ezored-sample/source/shared/ezored/sample/HelloWorld.cpp"
+    copyFiles:
+    - from: "${EZORED_VENDOR_DIR}/ezored-sample/djinni/java-output/HelloWorldBridge.java"
+      to: "${EZORED_FULL_TARGET_DIR}/library/src/main/java/com/ezored/sample/HelloWorldBridge.java"
+    - from: "${EZORED_VENDOR_DIR}/ezored-sample/djinni/java-output/HelloWorldProxy.java"
+      to: "${EZORED_FULL_TARGET_DIR}/library/src/main/java/com/ezored/sample/HelloWorldProxy.java"
+    - from: "${EZORED_VENDOR_DIR}/ezored-sample/source/java/HelloWorldProxyImpl.java"
+      to: "${EZORED_FULL_TARGET_DIR}/library/src/main/java/com/ezored/sample/HelloWorldProxyImpl.java"
