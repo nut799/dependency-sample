@@ -3,8 +3,8 @@ import shutil
 
 home_dir = os.getenv(key='EZORED_PROJECT_HOME')
 current_dir = os.getcwd()
-vendor_dir = os.getenv(key='EZORED_REPOSITORY_VENDOR_DIR')
-temp_dir = os.getenv(key='EZORED_REPOSITORY_TEMP_DIR')
+vendor_dir = os.getenv(key='EZORED_DEPENDENCY_VENDOR_DIR')
+temp_dir = os.getenv(key='EZORED_DEPENDENCY_TEMP_DIR')
 
 print('Sample :: Build script')
 print('Sample :: EZORED_PROJECT_HOME: {0}'.format(home_dir))
