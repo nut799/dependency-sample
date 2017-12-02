@@ -1,8 +1,6 @@
 import os
 import shutil
 
-dependency_name = 'dependency-sample'
-
 home_dir = os.getenv(key='EZORED_PROJECT_HOME')
 current_dir = os.getcwd()
 vendor_dir = os.getenv(key='EZORED_REPOSITORY_VENDOR_DIR')
