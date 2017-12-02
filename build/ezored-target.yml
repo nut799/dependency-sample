@@ -45,8 +45,8 @@ targets:
     - "${EZORED_DEPENDENCY_SOURCE_DIR}/source/shared/ezored/sample/HelloWorld.cpp"
     copy_files:
     - from_path: "${EZORED_DEPENDENCY_SOURCE_DIR}/djinni/java-output/HelloWorldBridge.java"
-      to_path: "${EZORED_FULL_TARGET_DIR}/library/src/main/java/com/ezored/sample/HelloWorldBridge.java"
+      to_path: "${EZORED_TARGET_BUILD_DIR}/library/src/main/java/com/ezored/sample/HelloWorldBridge.java"
     - from_path: "${EZORED_DEPENDENCY_SOURCE_DIR}/djinni/java-output/HelloWorldProxy.java"
-      to_path: "${EZORED_FULL_TARGET_DIR}/library/src/main/java/com/ezored/sample/HelloWorldProxy.java"
+      to_path: "${EZORED_TARGET_BUILD_DIR}/library/src/main/java/com/ezored/sample/HelloWorldProxy.java"
     - from_path: "${EZORED_DEPENDENCY_SOURCE_DIR}/source/java/HelloWorldProxyImpl.java"
-      to_path: "${EZORED_FULL_TARGET_DIR}/library/src/main/java/com/ezored/sample/HelloWorldProxyImpl.java"
+      to_path: "${EZORED_TARGET_BUILD_DIR}/library/src/main/java/com/ezored/sample/HelloWorldProxyImpl.java"
