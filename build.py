@@ -15,7 +15,7 @@ print('Sample :: VENDOR_DIR: {0}'.format(vendor_dir))
 print('Sample :: TEMP_DIR: {0}'.format(temp_dir))
 
 try:
-    shutil.rmtree(path=os.path.join(vendor_dir, dependency_name))
+    shutil.rmtree(path=vendor_dir)
 except:
     pass
 
