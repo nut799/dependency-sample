@@ -1,4 +1,4 @@
-# Ezored::Sample::HelloWorld
+# EzoRed::Sample::HelloWorld
 
 This is a simple `Hello World` example to test bridge and proxy code generation.  
 
