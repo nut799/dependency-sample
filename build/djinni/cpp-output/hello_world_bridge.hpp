@@ -6,7 +6,7 @@
 #include <memory>
 #include <string>
 
-namespace Ezored { namespace Sample {
+namespace EzoRed { namespace Sample {
 
 class HelloWorldProxy;
 
@@ -30,4 +30,4 @@ public:
     virtual void showGreetingMessageAlert() = 0;
 };
 
-} }  // namespace Ezored::Sample
+} }  // namespace EzoRed::Sample

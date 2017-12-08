@@ -13,8 +13,8 @@ namespace djinni_generated {
 class HelloWorldProxy
 {
 public:
-    using CppType = std::shared_ptr<::Ezored::Sample::HelloWorldProxy>;
-    using CppOptType = std::shared_ptr<::Ezored::Sample::HelloWorldProxy>;
+    using CppType = std::shared_ptr<::EzoRed::Sample::HelloWorldProxy>;
+    using CppOptType = std::shared_ptr<::EzoRed::Sample::HelloWorldProxy>;
     using ObjcType = id<NativeHelloWorldProxy>;
 
     using Boxed = HelloWorldProxy;

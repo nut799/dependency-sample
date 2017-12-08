@@ -8,10 +8,10 @@
 
 namespace djinni_generated {
 
-class NativeHelloWorldProxy final : ::djinni::JniInterface<::Ezored::Sample::HelloWorldProxy, NativeHelloWorldProxy> {
+class NativeHelloWorldProxy final : ::djinni::JniInterface<::EzoRed::Sample::HelloWorldProxy, NativeHelloWorldProxy> {
 public:
-    using CppType = std::shared_ptr<::Ezored::Sample::HelloWorldProxy>;
-    using CppOptType = std::shared_ptr<::Ezored::Sample::HelloWorldProxy>;
+    using CppType = std::shared_ptr<::EzoRed::Sample::HelloWorldProxy>;
+    using CppOptType = std::shared_ptr<::EzoRed::Sample::HelloWorldProxy>;
     using JniType = jobject;
 
     using Boxed = NativeHelloWorldProxy;
@@ -25,9 +25,9 @@ public:
 private:
     NativeHelloWorldProxy();
     friend ::djinni::JniClass<NativeHelloWorldProxy>;
-    friend ::djinni::JniInterface<::Ezored::Sample::HelloWorldProxy, NativeHelloWorldProxy>;
+    friend ::djinni::JniInterface<::EzoRed::Sample::HelloWorldProxy, NativeHelloWorldProxy>;
 
-    class JavaProxy final : ::djinni::JavaProxyHandle<JavaProxy>, public ::Ezored::Sample::HelloWorldProxy
+    class JavaProxy final : ::djinni::JavaProxyHandle<JavaProxy>, public ::EzoRed::Sample::HelloWorldProxy
     {
     public:
         JavaProxy(JniType j);
@@ -36,7 +36,7 @@ private:
         void showGreetingMessageAlert() override;
 
     private:
-        friend ::djinni::JniInterface<::Ezored::Sample::HelloWorldProxy, ::djinni_generated::NativeHelloWorldProxy>;
+        friend ::djinni::JniInterface<::EzoRed::Sample::HelloWorldProxy, ::djinni_generated::NativeHelloWorldProxy>;
     };
 
     const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/ezored/sample/HelloWorldProxy") };

@@ -6,7 +6,7 @@
 #include <hello_world_proxy.hpp>
 #include <ezored/sample/HelloWorld.hpp>
 
-namespace Ezored { namespace Sample {
+namespace EzoRed { namespace Sample {
 	
 class HelloWorldBridgeImpl : public HelloWorldBridge
 {

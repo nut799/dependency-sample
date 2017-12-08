@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-namespace Ezored { namespace Sample {
+namespace EzoRed { namespace Sample {
 		
 class HelloWorld
 {

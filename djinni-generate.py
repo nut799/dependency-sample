@@ -10,13 +10,13 @@ except:
 
 # generate new files
 subprocess.call([
-    "/Users/paulo/Developer/workspaces/cpp/djinni/src/run",
+    "/Users/paulo/Developer/workspaces/java/djinni/src/run",
     "--java-out", "build/djinni/java-output",
 	"--java-package", "com.ezored.sample",
 	"--ident-java-field", "mFooBar",
 
 	"--cpp-out", "build/djinni/cpp-output",
-	"--cpp-namespace", "Ezored::Sample",
+	"--cpp-namespace", "EzoRed::Sample",
 	"--ident-cpp-field", "fooBar",
 	"--ident-cpp-method", "fooBar",
 	

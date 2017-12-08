@@ -15,15 +15,15 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
 
 @interface NativeHelloWorldBridge ()
 
-- (id)initWithCpp:(const std::shared_ptr<::Ezored::Sample::HelloWorldBridge>&)cppRef;
+- (id)initWithCpp:(const std::shared_ptr<::EzoRed::Sample::HelloWorldBridge>&)cppRef;
 
 @end
 
 @implementation NativeHelloWorldBridge {
-    ::djinni::CppProxyCache::Handle<std::shared_ptr<::Ezored::Sample::HelloWorldBridge>> _cppRefHandle;
+    ::djinni::CppProxyCache::Handle<std::shared_ptr<::EzoRed::Sample::HelloWorldBridge>> _cppRefHandle;
 }
 
-- (id)initWithCpp:(const std::shared_ptr<::Ezored::Sample::HelloWorldBridge>&)cppRef
+- (id)initWithCpp:(const std::shared_ptr<::EzoRed::Sample::HelloWorldBridge>&)cppRef
 {
     if (self = [super init]) {
         _cppRefHandle.assign(cppRef);
@@ -33,7 +33,7 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
 
 + (nullable NativeHelloWorldBridge *)create {
     try {
-        auto objcpp_result_ = ::Ezored::Sample::HelloWorldBridge::create();
+        auto objcpp_result_ = ::EzoRed::Sample::HelloWorldBridge::create();
         return ::djinni_generated::HelloWorldBridge::fromCpp(objcpp_result_);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }

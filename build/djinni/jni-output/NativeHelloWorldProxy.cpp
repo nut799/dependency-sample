@@ -5,7 +5,7 @@
 
 namespace djinni_generated {
 
-NativeHelloWorldProxy::NativeHelloWorldProxy() : ::djinni::JniInterface<::Ezored::Sample::HelloWorldProxy, NativeHelloWorldProxy>() {}
+NativeHelloWorldProxy::NativeHelloWorldProxy() : ::djinni::JniInterface<::EzoRed::Sample::HelloWorldProxy, NativeHelloWorldProxy>() {}
 
 NativeHelloWorldProxy::~NativeHelloWorldProxy() = default;
 

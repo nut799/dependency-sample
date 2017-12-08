@@ -7,7 +7,7 @@
 
 namespace djinni_generated {
 
-NativeHelloWorldBridge::NativeHelloWorldBridge() : ::djinni::JniInterface<::Ezored::Sample::HelloWorldBridge, NativeHelloWorldBridge>("com/ezored/sample/HelloWorldBridge$CppProxy") {}
+NativeHelloWorldBridge::NativeHelloWorldBridge() : ::djinni::JniInterface<::EzoRed::Sample::HelloWorldBridge, NativeHelloWorldBridge>("com/ezored/sample/HelloWorldBridge$CppProxy") {}
 
 NativeHelloWorldBridge::~NativeHelloWorldBridge() = default;
 
@@ -16,7 +16,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorldBridge_00024CppProxy_na
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
-        delete reinterpret_cast<::djinni::CppProxyHandle<::Ezored::Sample::HelloWorldBridge>*>(nativeRef);
+        delete reinterpret_cast<::djinni::CppProxyHandle<::EzoRed::Sample::HelloWorldBridge>*>(nativeRef);
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
@@ -24,7 +24,7 @@ CJNIEXPORT jobject JNICALL Java_com_ezored_sample_HelloWorldBridge_create(JNIEnv
 {
     try {
         DJINNI_FUNCTION_PROLOGUE0(jniEnv);
-        auto r = ::Ezored::Sample::HelloWorldBridge::create();
+        auto r = ::EzoRed::Sample::HelloWorldBridge::create();
         return ::djinni::release(::djinni_generated::NativeHelloWorldBridge::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
@@ -33,7 +33,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorldBridge_00024CppProxy_na
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
-        const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::Sample::HelloWorldBridge>(nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::HelloWorldBridge>(nativeRef);
         ref->setProxy(::djinni_generated::NativeHelloWorldProxy::toCpp(jniEnv, j_proxy));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
@@ -42,7 +42,7 @@ CJNIEXPORT jobject JNICALL Java_com_ezored_sample_HelloWorldBridge_00024CppProxy
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
-        const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::Sample::HelloWorldBridge>(nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::HelloWorldBridge>(nativeRef);
         auto r = ref->getProxy();
         return ::djinni::release(::djinni_generated::NativeHelloWorldProxy::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
@@ -52,7 +52,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorldBridge_00024CppProxy_na
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
-        const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::Sample::HelloWorldBridge>(nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::HelloWorldBridge>(nativeRef);
         ref->setGreetingMessage(::djinni::String::toCpp(jniEnv, j_message));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
@@ -61,7 +61,7 @@ CJNIEXPORT jstring JNICALL Java_com_ezored_sample_HelloWorldBridge_00024CppProxy
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
-        const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::Sample::HelloWorldBridge>(nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::HelloWorldBridge>(nativeRef);
         auto r = ref->getGreetingMessage();
         return ::djinni::release(::djinni::String::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
@@ -71,7 +71,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorldBridge_00024CppProxy_na
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
-        const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::Sample::HelloWorldBridge>(nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::HelloWorldBridge>(nativeRef);
         ref->showGreetingMessage();
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
@@ -80,7 +80,7 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_HelloWorldBridge_00024CppProxy_na
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
-        const auto& ref = ::djinni::objectFromHandleAddress<::Ezored::Sample::HelloWorldBridge>(nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::HelloWorldBridge>(nativeRef);
         ref->showGreetingMessageAlert();
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }

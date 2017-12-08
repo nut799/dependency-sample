@@ -7,7 +7,7 @@ This is a simple `Hello World` example to test bridge and proxy code generation.
 ```c++
 #include <ezored/sample/HelloWorld.hpp>
 
-auto helloWorld = std::make_shared<Ezored::Sample::HelloWorld>();
+auto helloWorld = std::make_shared<EzoRed::Sample::HelloWorld>();
 helloWorld->setGreetingMessage("Hello World");
 helloWorld->showGreetingMessage();
 
@@ -19,8 +19,8 @@ std::cout << helloWorld->getGreetingMessage() << std::endl;
 Add the following lines to your bridge header file in Swift project:
 
 ```c++
-#import <Ezored/NativeHelloWorldBridge.h>
-#import <Ezored/NativeHelloWorldProxyImpl.h>
+#import <EzoRed/NativeHelloWorldBridge.h>
+#import <EzoRed/NativeHelloWorldProxyImpl.h>
 ```
 
 And in your swift class:
@@ -49,7 +49,7 @@ import com.ezored.sample.HelloWorldProxyImpl;
 public class MainActivity extends AppCompatActivity {
 
     static {
-        System.loadLibrary("Ezored");
+        System.loadLibrary("EzoRed");
     }
 
     @Override

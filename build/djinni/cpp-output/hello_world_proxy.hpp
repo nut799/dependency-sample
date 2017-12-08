@@ -3,7 +3,7 @@
 
 #pragma once
 
-namespace Ezored { namespace Sample {
+namespace EzoRed { namespace Sample {
 
 /** Platform-Specific implementation of HelloWorldProxy Class */
 class HelloWorldProxy {
@@ -13,4 +13,4 @@ public:
     virtual void showGreetingMessageAlert() = 0;
 };
 
-} }  // namespace Ezored::Sample
+} }  // namespace EzoRed::Sample
