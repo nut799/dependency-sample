@@ -20,12 +20,12 @@ subprocess.call([
 	"--ident-cpp-field", "fooBar",
 	"--ident-cpp-method", "fooBar",
 	
-	"--ident-jni-class", "NativeFooBar",
-	"--ident-jni-file", "NativeFooBar",
+	"--ident-jni-class", "FooBar",
+	"--ident-jni-file", "FooBar",
 	"--jni-out", "build/djinni/jni-output",
 
 	"--objc-out", "build/djinni/objc-output",
-	"--objc-type-prefix", "Native",
+	"--objc-type-prefix", "",
 	"--objcpp-out", "build/djinni/objc-output",
 
 	"--idl", "djinni/proj.djinni"	

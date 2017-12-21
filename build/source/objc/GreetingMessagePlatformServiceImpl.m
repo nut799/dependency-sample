@@ -1,17 +1,18 @@
-#import "NativeHelloWorldProxyImpl.h"
+#import "GreetingMessagePlatformServiceImpl.h"
 #import <UIKit/UIKit.h>
 
-@interface NativeHelloWorldProxyImpl ()
+@interface GreetingMessagePlatformServiceImpl ()
 
 @end
 
-@implementation NativeHelloWorldProxyImpl
+@implementation GreetingMessagePlatformServiceImpl
 
 //------------------------------------------------------------------------------
 #pragma mark - Class Initializer
 //------------------------------------------------------------------------------
 
-+ (instancetype)proxy {
++ (instancetype)proxy 
+{
     return [[self alloc] init];
 }
 
@@ -19,10 +20,12 @@
 #pragma mark - Initialization
 //------------------------------------------------------------------------------
 
-- (instancetype)init {
+- (instancetype)init 
+{
     self = [super init];
 
-    if (self) {
+    if (self) 
+    {
         //
     }
 
@@ -30,11 +33,13 @@
 }
 
 //------------------------------------------------------------------------------
-#pragma mark - NativeHelloWorldProxyImpl
+#pragma mark - GreetingMessagePlatformServiceImpl
 //------------------------------------------------------------------------------
 
-- (void)showGreetingMessageAlert {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Title" message:@"Message from proxy Obj-C code" preferredStyle:UIAlertControllerStyleAlert];
+- (void)showGreetingMessageAlert:(nonnull NSString *)title
+                         message:(nonnull NSString *)message 
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
 
 	UIAlertAction *button = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
 		// handle action if need

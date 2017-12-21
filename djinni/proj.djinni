@@ -1,15 +1,13 @@
-# Platform-Specific implementation of HelloWorldProxy Class
-hello_world_proxy = interface +j +o {
-	show_greeting_message_alert();
+# Platform-Specific implementation of Greeting Message Platform Service class
+greeting_message_platform_service = interface +j +o {
+	show_greeting_message_alert(title: string, message: string);
 }
 
-# Native HelloWorldBridge Class
-hello_world_bridge = interface +c {
-	static create(): hello_world_bridge;
-	set_proxy(proxy: hello_world_proxy);
-	get_proxy(): hello_world_proxy;
-	set_greeting_message(message: string);
-	get_greeting_message(): string;
-    show_greeting_message();
-	show_greeting_message_alert();
+# Native Greeting Message Bridge class
+greeting_message_bridge = interface +c {
+	static shared_instance(ps: greeting_message_platform_service): greeting_message_bridge;
+	set_message(message: string);
+	get_message(): string;
+    print_message();
+	show_greeting_message_alert(title: string, message: string);
 }
