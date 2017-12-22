@@ -34,7 +34,6 @@ gm.setPlatformService(EZRGreetingMessagePlatformServiceImpl())
 gm.setMessage("Test")
 gm.printMessage()
 
-// if you want show a native alert test from platform service class
 gm.showGreetingMessageAlert("Your title", message: "Your message")
 ```
 
