@@ -25,7 +25,7 @@ subprocess.call([
 	"--jni-out", "build/djinni/jni-output",
 
 	"--objc-out", "build/djinni/objc-output",
-	"--objc-type-prefix", "",
+	"--objc-type-prefix", "EZR",
 	"--objcpp-out", "build/djinni/objc-output",
 
 	"--idl", "djinni/proj.djinni"	

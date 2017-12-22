@@ -9,11 +9,11 @@ GreetingMessageBridgeImpl::GreetingMessageBridgeImpl() {
     this->gm = nullptr;
 }
 
-std::shared_ptr<GreetingMessageBridge> GreetingMessageBridge::sharedInstance(const std::shared_ptr<GreetingMessagePlatformService> & ps) {
-    return GreetingMessageBridgeImpl::internalSharedInstance(ps);
+std::shared_ptr<GreetingMessageBridge> GreetingMessageBridge::sharedInstance() {
+    return GreetingMessageBridgeImpl::internalSharedInstance();
 }
 
-std::shared_ptr<GreetingMessageBridgeImpl> GreetingMessageBridgeImpl::internalSharedInstance(const std::shared_ptr<GreetingMessagePlatformService> & ps) {
+std::shared_ptr<GreetingMessageBridgeImpl> GreetingMessageBridgeImpl::internalSharedInstance() {
     if (instance == nullptr) {
         std::shared_ptr<GreetingMessage> gm = std::make_shared<GreetingMessage>();
         
@@ -44,6 +44,10 @@ void GreetingMessageBridgeImpl::showGreetingMessageAlert(const std::string & tit
 
 void GreetingMessageBridgeImpl::setGM(const std::shared_ptr<GreetingMessage> & gm) {
     this->gm = gm;
+}
+    
+void GreetingMessageBridgeImpl::setPlatformService(const std::shared_ptr<GreetingMessagePlatformService> & ps) {
+    this->ps = ps;
 }
     
 }}

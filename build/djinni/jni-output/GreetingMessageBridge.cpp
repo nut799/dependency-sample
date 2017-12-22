@@ -20,11 +20,11 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_GreetingMessageBridge_00024CppPro
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jobject JNICALL Java_com_ezored_sample_GreetingMessageBridge_sharedInstance(JNIEnv* jniEnv, jobject /*this*/, jobject j_ps)
+CJNIEXPORT jobject JNICALL Java_com_ezored_sample_GreetingMessageBridge_sharedInstance(JNIEnv* jniEnv, jobject /*this*/)
 {
     try {
         DJINNI_FUNCTION_PROLOGUE0(jniEnv);
-        auto r = ::EzoRed::Sample::GreetingMessageBridge::sharedInstance(::djinni_generated::GreetingMessagePlatformService::toCpp(jniEnv, j_ps));
+        auto r = ::EzoRed::Sample::GreetingMessageBridge::sharedInstance();
         return ::djinni::release(::djinni_generated::GreetingMessageBridge::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
@@ -64,6 +64,15 @@ CJNIEXPORT void JNICALL Java_com_ezored_sample_GreetingMessageBridge_00024CppPro
         const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::GreetingMessageBridge>(nativeRef);
         ref->showGreetingMessageAlert(::djinni::String::toCpp(jniEnv, j_title),
                                       ::djinni::String::toCpp(jniEnv, j_message));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
+}
+
+CJNIEXPORT void JNICALL Java_com_ezored_sample_GreetingMessageBridge_00024CppProxy_native_1setPlatformService(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_ps)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::EzoRed::Sample::GreetingMessageBridge>(nativeRef);
+        ref->setPlatformService(::djinni_generated::GreetingMessagePlatformService::toCpp(jniEnv, j_ps));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 

@@ -14,7 +14,7 @@ public class GreetingMessagePlatformServiceImpl extends GreetingMessagePlatformS
 		this.context = context;
 	}
 
-	public void void showGreetingMessageAlert(String title, String message) {
+	public void showGreetingMessageAlert(String title, String message) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
 		builder.setTitle(title);

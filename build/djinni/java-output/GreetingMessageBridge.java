@@ -15,7 +15,9 @@ public abstract class GreetingMessageBridge {
 
     public abstract void showGreetingMessageAlert(String title, String message);
 
-    public static native GreetingMessageBridge sharedInstance(GreetingMessagePlatformService ps);
+    public abstract void setPlatformService(GreetingMessagePlatformService ps);
+
+    public static native GreetingMessageBridge sharedInstance();
 
     private static final class CppProxy extends GreetingMessageBridge
     {
@@ -71,5 +73,13 @@ public abstract class GreetingMessageBridge {
             native_showGreetingMessageAlert(this.nativeRef, title, message);
         }
         private native void native_showGreetingMessageAlert(long _nativeRef, String title, String message);
+
+        @Override
+        public void setPlatformService(GreetingMessagePlatformService ps)
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_setPlatformService(this.nativeRef, ps);
+        }
+        private native void native_setPlatformService(long _nativeRef, GreetingMessagePlatformService ps);
     }
 }

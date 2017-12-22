@@ -1,11 +1,11 @@
-#import "GreetingMessagePlatformServiceImpl.h"
+#import "EZRGreetingMessagePlatformServiceImpl.h"
 #import <UIKit/UIKit.h>
 
-@interface GreetingMessagePlatformServiceImpl ()
+@interface EZRGreetingMessagePlatformServiceImpl ()
 
 @end
 
-@implementation GreetingMessagePlatformServiceImpl
+@implementation EZRGreetingMessagePlatformServiceImpl
 
 //------------------------------------------------------------------------------
 #pragma mark - Class Initializer
@@ -33,7 +33,7 @@
 }
 
 //------------------------------------------------------------------------------
-#pragma mark - GreetingMessagePlatformServiceImpl
+#pragma mark - EZRGreetingMessagePlatformServiceImpl
 //------------------------------------------------------------------------------
 
 - (void)showGreetingMessageAlert:(nonnull NSString *)title

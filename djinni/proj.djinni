@@ -5,9 +5,10 @@ greeting_message_platform_service = interface +j +o {
 
 # Native Greeting Message Bridge class
 greeting_message_bridge = interface +c {
-	static shared_instance(ps: greeting_message_platform_service): greeting_message_bridge;
+	static shared_instance(): greeting_message_bridge;
 	set_message(message: string);
 	get_message(): string;
     print_message();
 	show_greeting_message_alert(title: string, message: string);
+	set_platform_service(ps: greeting_message_platform_service);
 }

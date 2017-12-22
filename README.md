@@ -1,17 +1,17 @@
-# EzoRed::Sample::HelloWorld
+# EzoRed::Sample::GreetingMessage
 
-This is a simple `Hello World` example to test bridge and proxy code generation.  
+This is a simple `Greeting Message` example to test all resources from Djinni tool and the bridge between platform code and C++ code.  
 
 ### How to use it?
 
 ```c++
-#include <ezored/sample/HelloWorld.hpp>
+#include <ezored/sample/GreetingMessage.hpp>
 
-auto helloWorld = std::make_shared<EzoRed::Sample::HelloWorld>();
-helloWorld->setGreetingMessage("Hello World");
-helloWorld->showGreetingMessage();
+auto gm = std::make_shared<EzoRed::Sample::GreetingMessage>();
+gm->setMessage("Your message");
+gm->printMessage();
 
-std::cout << helloWorld->getGreetingMessage() << std::endl;
+std::cout << gm->getMessage() << std::endl;
 ```
 
 ### How to use it with Swift?
@@ -19,32 +19,35 @@ std::cout << helloWorld->getGreetingMessage() << std::endl;
 Add the following lines to your bridge header file in Swift project:
 
 ```c++
-#import <EzoRed/NativeHelloWorldBridge.h>
-#import <EzoRed/NativeHelloWorldProxyImpl.h>
+#import <EzoRed/EZRGreetingMessageBridge.h>
+#import <EzoRed/EZRGreetingMessagePlatformServiceImpl.h>
 ```
 
 And in your swift class:
 
 ```swift
-let bridge = NativeHelloWorldBridge.create()
-let proxy = NativeHelloWorldProxyImpl.proxy()
+guard let gm = EZRGreetingMessageBridge.sharedInstance() else {
+    return
+}
 
-bridge?.setProxy(proxy)
-bridge?.setGreetingMessage("Teste")
-bridge?.showGreetingMessage()
+gm.setPlatformService(EZRGreetingMessagePlatformServiceImpl())
+gm.setMessage("Test")
+gm.printMessage()
 
-// if you want show a native alert test from proxy
-bridge?.showGreetingMessageAlert()
+// if you want show a native alert test from platform service class
+gm.showGreetingMessageAlert("Your title", message: "Your message")
 ```
 
 ### How to use it with Android?
 
 ```java
+package ubook.com.teste;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.ezored.sample.HelloWorldBridge;
-import com.ezored.sample.HelloWorldProxyImpl;
+import com.ezored.sample.GreetingMessageBridge;
+import com.ezored.sample.GreetingMessagePlatformServiceImpl;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,15 +60,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        HelloWorldProxyImpl proxy = new HelloWorldProxyImpl(this);
+        GreetingMessageBridge gm = GreetingMessageBridge.sharedInstance();
+        gm.setPlatformService(new GreetingMessagePlatformServiceImpl(this));
 
-        HelloWorldBridge bridge = HelloWorldBridge.create();
-        bridge.setGreetingMessage("Hello World");
-        bridge.showGreetingMessage();
-        bridge.setProxy(proxy);
+        gm.setMessage("Simple message");
+        gm.printMessage();
 
-        // if you want show a native alert test from proxy
-        bridge.showGreetingMessageAlert();
+        gm.showGreetingMessageAlert("Your title", "Your message");
     }
 
 }

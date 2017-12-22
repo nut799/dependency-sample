@@ -15,7 +15,7 @@ class GreetingMessageBridge {
 public:
     virtual ~GreetingMessageBridge() {}
 
-    static std::shared_ptr<GreetingMessageBridge> sharedInstance(const std::shared_ptr<GreetingMessagePlatformService> & ps);
+    static std::shared_ptr<GreetingMessageBridge> sharedInstance();
 
     virtual void setMessage(const std::string & message) = 0;
 
@@ -24,6 +24,8 @@ public:
     virtual void printMessage() = 0;
 
     virtual void showGreetingMessageAlert(const std::string & title, const std::string & message) = 0;
+
+    virtual void setPlatformService(const std::shared_ptr<GreetingMessagePlatformService> & ps) = 0;
 };
 
 } }  // namespace EzoRed::Sample

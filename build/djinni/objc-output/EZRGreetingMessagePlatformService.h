@@ -5,7 +5,7 @@
 
 
 /** Platform-Specific implementation of Greeting Message Platform Service class */
-@protocol GreetingMessagePlatformService
+@protocol EZRGreetingMessagePlatformService
 
 - (void)showGreetingMessageAlert:(nonnull NSString *)title
                          message:(nonnull NSString *)message;

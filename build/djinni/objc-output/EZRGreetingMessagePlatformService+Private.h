@@ -6,7 +6,7 @@
 
 static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for this file");
 
-@protocol GreetingMessagePlatformService;
+@protocol EZRGreetingMessagePlatformService;
 
 namespace djinni_generated {
 
@@ -15,7 +15,7 @@ class GreetingMessagePlatformService
 public:
     using CppType = std::shared_ptr<::EzoRed::Sample::GreetingMessagePlatformService>;
     using CppOptType = std::shared_ptr<::EzoRed::Sample::GreetingMessagePlatformService>;
-    using ObjcType = id<GreetingMessagePlatformService>;
+    using ObjcType = id<EZRGreetingMessagePlatformService>;
 
     using Boxed = GreetingMessagePlatformService;
 

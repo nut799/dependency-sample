@@ -6,7 +6,7 @@
 
 static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for this file");
 
-@class GreetingMessageBridge;
+@class EZRGreetingMessageBridge;
 
 namespace djinni_generated {
 
@@ -15,7 +15,7 @@ class GreetingMessageBridge
 public:
     using CppType = std::shared_ptr<::EzoRed::Sample::GreetingMessageBridge>;
     using CppOptType = std::shared_ptr<::EzoRed::Sample::GreetingMessageBridge>;
-    using ObjcType = GreetingMessageBridge*;
+    using ObjcType = EZRGreetingMessageBridge*;
 
     using Boxed = GreetingMessageBridge;
 
