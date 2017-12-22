@@ -2,7 +2,7 @@
 
 This is a simple `Greeting Message` example to test all resources from Djinni tool and the bridge between platform code and C++ code.  
 
-### How to use it?
+### How to use it with C++?
 
 ```c++
 #include <ezored/sample/GreetingMessage.hpp>
